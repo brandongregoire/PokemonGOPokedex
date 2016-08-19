@@ -12,6 +12,7 @@
 		12DFE7681D677EC100E1A01C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DFE7661D677EC100E1A01C /* Main.storyboard */; };
 		12DFE76A1D677EC100E1A01C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12DFE7691D677EC100E1A01C /* Assets.xcassets */; };
 		12DFE76D1D677EC100E1A01C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12DFE76B1D677EC100E1A01C /* LaunchScreen.storyboard */; };
+		12DFE7751D6782D800E1A01C /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 12DFE7741D6782D800E1A01C /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		12DFE7691D677EC100E1A01C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12DFE76C1D677EC100E1A01C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12DFE76E1D677EC100E1A01C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12DFE7741D6782D800E1A01C /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				12DFE7641D677EC100E1A01C /* ViewController.swift */,
 				12DFE7661D677EC100E1A01C /* Main.storyboard */,
 				12DFE7691D677EC100E1A01C /* Assets.xcassets */,
+				12DFE7741D6782D800E1A01C /* pokemon.csv */,
 				12DFE76B1D677EC100E1A01C /* LaunchScreen.storyboard */,
 				12DFE76E1D677EC100E1A01C /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			files = (
 				12DFE76D1D677EC100E1A01C /* LaunchScreen.storyboard in Resources */,
 				12DFE76A1D677EC100E1A01C /* Assets.xcassets in Resources */,
+				12DFE7751D6782D800E1A01C /* pokemon.csv in Resources */,
 				12DFE7681D677EC100E1A01C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +301,7 @@
 				12DFE7731D677EC100E1A01C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
