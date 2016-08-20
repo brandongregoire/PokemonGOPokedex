@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOd-ph-VTO">
@@ -72,7 +72,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="d1p-2V-qIO" customClass="PokeCell" customModule="PokemonGOPokedex" customModuleProvider="target">
-                                        <frame key="frameInset" width="105" height="105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
@@ -146,20 +146,11 @@
                         <viewControllerLayoutGuide type="bottom" id="pOc-k5-EC4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9T0-mJ-1b8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdC-V9-lbB">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26s-z3-274">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="OLV-RN-SHX"/>
-                                            <constraint firstAttribute="width" constant="200" id="rW0-dD-uCr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hti-3T-lO1">
                                         <frame key="frameInset" minX="8" minY="32" width="43" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -168,11 +159,20 @@
                                             <action selector="backBtnPressed:" destination="d5Y-PL-gZb" eventType="touchUpInside" id="mu2-LA-Sm0"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ivysaur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGn-Xp-kDs">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Kgz-ps-W65"/>
+                                            <constraint firstAttribute="width" constant="200" id="W3A-CE-fo2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.1019607843" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="26s-z3-274" firstAttribute="centerX" secondItem="vdC-V9-lbB" secondAttribute="centerX" id="OdR-g9-pyR"/>
-                                    <constraint firstAttribute="bottom" secondItem="26s-z3-274" secondAttribute="bottom" constant="2" id="e1x-Kg-S6b"/>
+                                    <constraint firstAttribute="bottom" secondItem="jGn-Xp-kDs" secondAttribute="bottom" constant="8" id="GW6-1h-sAc"/>
+                                    <constraint firstItem="jGn-Xp-kDs" firstAttribute="centerX" secondItem="vdC-V9-lbB" secondAttribute="centerX" id="dt4-3E-lD1"/>
                                     <constraint firstAttribute="height" constant="65" id="sHd-ay-4VV"/>
                                 </constraints>
                             </view>
@@ -236,7 +236,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oA2-Ho-jp9">
-                                                        <frame key="frameInset" minX="190" width="99" height="21"/>
+                                                        <frame key="frameInset" minX="245" width="99" height="21"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Defense:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4a6-lg-WOk">
                                                                 <frame key="frameInset" width="72" height="21"/>
@@ -276,7 +276,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VYJ-bR-nRV">
-                                                                <frame key="frameInset" minX="176" width="112" height="20"/>
+                                                                <frame key="frameInset" minX="231" width="112" height="20"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pokedex ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wd-q2-tVq">
                                                                         <frame key="frameInset" width="93" height="20"/>
@@ -391,7 +391,7 @@
                         <outlet property="evoLbl" destination="WYf-qk-aqo" id="Hag-qQ-F4L"/>
                         <outlet property="heightLbl" destination="I80-i6-ouj" id="YQj-I3-a85"/>
                         <outlet property="mainImg" destination="b1l-V5-fEI" id="Iq1-w5-f7o"/>
-                        <outlet property="nameLbl" destination="26s-z3-274" id="VqP-2U-nZJ"/>
+                        <outlet property="nameLbl" destination="jGn-Xp-kDs" id="8mG-hv-YhG"/>
                         <outlet property="nextEvoImg" destination="9UU-iM-yzE" id="zPq-LP-UU2"/>
                         <outlet property="pokedexIDLbl" destination="7wd-q2-tVq" id="Q3h-Qm-6SX"/>
                         <outlet property="typeLbl" destination="eX4-aR-pt7" id="h9D-j9-r2O"/>

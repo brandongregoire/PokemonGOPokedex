@@ -12,29 +12,31 @@ class PokemonDetailVC: UIViewController {
 
     var pokemon: Pokemon!
     
-    @IBOutlet var nameLbl: UILabel!
-    @IBOutlet var mainImg: UIImageView!
-    @IBOutlet var descriptionLbl: UILabel!
-    @IBOutlet var typeLbl: UILabel!
-    @IBOutlet var defenseLbl: UILabel!
-    @IBOutlet var heightLbl: UILabel!
-    @IBOutlet var pokedexIDLbl: UILabel!
-    @IBOutlet var weightLbl: UILabel!
-    @IBOutlet var basicAttackLbl: UILabel!
-    @IBOutlet var currentEvoImg: UIImageView!
-    @IBOutlet var nextEvoImg: UIImageView!
-    @IBOutlet var evoLbl: UILabel!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var typeLbl: UILabel!
+    @IBOutlet weak var defenseLbl: UILabel!
+    @IBOutlet weak var heightLbl: UILabel!
+    @IBOutlet weak var pokedexIDLbl: UILabel!
+    @IBOutlet weak var weightLbl: UILabel!
+    @IBOutlet weak var basicAttackLbl: UILabel!
+    @IBOutlet weak var currentEvoImg: UIImageView!
+    @IBOutlet weak var nextEvoImg: UIImageView!
+    @IBOutlet weak var evoLbl: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
-        nameLbl.text = pokemon.name
+        nameLbl.text = pokemon.name.capitalized
+        
         pokemon.downloadPokemonDetail {
             //Whatever is wrote here is only called when the network call is complete
             self.updateUI()
+            
         }
+        
     }
     
     func updateUI() {
